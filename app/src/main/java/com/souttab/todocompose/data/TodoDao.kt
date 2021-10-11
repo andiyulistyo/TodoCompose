@@ -1,7 +1,7 @@
-package com.souttab.todocompose
+package com.souttab.todocompose.data
 
 import androidx.room.*
-import com.souttab.todocompose.data.ToDoTasks
+import com.souttab.todocompose.data.models.ToDoTasks
 import kotlinx.coroutines.flow.Flow
 
 @Dao

@@ -1,7 +1,8 @@
-package com.souttab.todocompose.data
+package com.souttab.todocompose.data.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.souttab.todocompose.data.models.Priority
 import com.souttab.todocompose.util.Constants.DATABASE_TABLE
 
 @Entity(tableName = DATABASE_TABLE)

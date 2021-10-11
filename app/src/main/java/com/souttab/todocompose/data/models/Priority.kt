@@ -1,4 +1,4 @@
-package com.souttab.todocompose.data
+package com.souttab.todocompose.data.models
 
 import androidx.compose.ui.graphics.Color
 import com.souttab.todocompose.ui.theme.HighPriorityColor
