@@ -30,15 +30,9 @@ interface TodoDao {
             ":searchQuery ORDER BY id ASC")
     fun searchDatabase(searchQuery: String): Flow<List<ToDoTasks>>
 
-    @Query("SELECT * FROM todo_table" +
-            "ORDER BY CASE WHEN priority LIKE 'L%' THEN 1" +
-            "WHEN priority LIKE 'M%' THEN 2" +
-            "WHEN priority LIKE 'H%' THEN 3 END")
+    @Query("SELECT * FROM todo_table ORDER BY CASE WHEN priority LIKE 'L%' THEN 1 WHEN priority LIKE 'M%' THEN 2 WHEN priority LIKE 'H%' THEN 3 END")
     fun sortByLowPriority(): Flow<List<ToDoTasks>>
 
-    @Query("SELECT * FROM todo_table" +
-            "ORDER BY CASE WHEN priority LIKE 'H%' THEN 1" +
-            "WHEN priority LIKE 'M%' THEN 2" +
-            "WHEN priority LIKE 'L%' THEN 3 END")
+    @Query("SELECT * FROM todo_table ORDER BY CASE WHEN priority LIKE 'H%' THEN 1 WHEN priority LIKE 'M%' THEN 2 WHEN priority LIKE 'L%' THEN 3 END")
     fun sortByHighPriority(): Flow<List<ToDoTasks>>
 }
