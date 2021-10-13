@@ -3,7 +3,7 @@ package com.souttab.todocompose.navigation.destinations
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavType
 import androidx.navigation.compose.composable
-import androidx.navigation.navArgument
+import androidx.navigation.compose.navArgument
 import com.souttab.todocompose.util.Action
 import com.souttab.todocompose.util.Constants
 
